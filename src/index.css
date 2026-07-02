@@ -949,7 +949,7 @@ body {
   margin: 0 auto;
 }
 .outcomes-header {
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 .outcomes-subtitle {
   font-family: 'Inter', sans-serif;
@@ -965,10 +965,12 @@ body {
   margin-right: 1.5rem;
 }
 .outcomes-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #ffffff;
-  margin-top: 1rem;
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.04em;
 }
 
 .outcomes-grid {
