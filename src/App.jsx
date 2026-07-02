@@ -74,6 +74,7 @@ function App() {
             <li><a href="#timeline" onClick={() => setMenuOpen(false)}>Experience</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
             <li><a href="#expertise" onClick={() => setMenuOpen(false)}>Skills</a></li>
+            <li><a href="#" onClick={() => setMenuOpen(false)}>Resume ↓</a></li>
           </ul>
         </div>
         <div className="nav-right">
