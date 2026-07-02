@@ -24,7 +24,6 @@ function App() {
   const [activeTab, setActiveTab] = useState('overview');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -47,17 +46,11 @@ function App() {
       }
     };
     
-    const handleMouseMove = (e) => {
-      setMousePos({ x: e.clientX, y: e.clientY });
-    };
-    
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
@@ -97,16 +90,6 @@ function App() {
 
       <div className="sections-container">
         <section id="home" className="hero-section">
-          {/* Background Parallax Text */}
-          <div 
-            className="hero-bg-text"
-            style={{ 
-              transform: `translate(${mousePos.x * -0.02}px, ${mousePos.y * -0.02}px)` 
-            }}
-          >
-            Principal AI<br/>Platform Engineer
-          </div>
-
           <div className="hero-left">
             <div className="icon-wrapper">
                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0066ff" stroke="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
