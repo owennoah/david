@@ -1084,7 +1084,7 @@ body {
 }
 /* Contact Section */
 .contact-section-wrapper {
-  background-color: #050816;
+  background-color: #0c0c0c;
   color: #ffffff;
   padding: 6rem 0;
   width: 100%;
@@ -1118,15 +1118,15 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: #0a0e17;
-  border: 1px solid #1e293b;
+  background-color: #111;
+  border: 1px solid #222;
   border-radius: 8px;
   padding: 1.2rem 1.5rem;
   margin-bottom: 1rem;
   transition: border-color 0.2s ease;
 }
 .ci-card:hover {
-  border-color: #00D9FF;
+  border-color: #9FD458;
 }
 .ci-icon {
   display: flex;
@@ -1135,8 +1135,8 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  background-color: #050816;
-  border: 1px solid #1e293b;
+  background-color: rgba(159, 212, 88, 0.08);
+  border: 1px solid transparent;
 }
 .ci-text {
   display: flex;
@@ -1158,8 +1158,8 @@ body {
 }
 
 .contact-form-container {
-  background-color: #0a0e17;
-  border: 1px solid #1e293b;
+  background-color: #111;
+  border: 1px solid #222;
   border-radius: 12px;
   padding: 2.5rem;
 }
@@ -1168,8 +1168,8 @@ body {
 }
 .form-group input, .form-group textarea {
   width: 100%;
-  background-color: #050816;
-  border: 1px solid #1e293b;
+  background-color: #0c0c0c;
+  border: 1px solid #222;
   border-radius: 6px;
   padding: 1.2rem;
   color: #fff;
@@ -1182,12 +1182,12 @@ body {
 }
 .form-group input:focus, .form-group textarea:focus {
   outline: none;
-  border-color: #00D9FF;
+  border-color: #9FD458;
 }
 .submit-btn {
   width: 100%;
-  background: linear-gradient(to right, #00D9FF, #a855f7);
-  color: #fff;
+  background: #9FD458;
+  color: #000;
   border: none;
   border-radius: 6px;
   padding: 1.2rem;
