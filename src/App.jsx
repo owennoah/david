@@ -71,7 +71,7 @@ function App() {
           <ul className="nav-links">
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#highlights" onClick={() => setMenuOpen(false)}>Impact</a></li>
-            <li><a href="#timeline" onClick={() => setMenuOpen(false)}>Experience</a></li>
+            <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
             <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
             <li><a href="#expertise" onClick={() => setMenuOpen(false)}>Skills</a></li>
             <li><a href="https://onedrive.live.com/?id=%2Fpersonal%2F899675BF6ED04394%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FDavid%5FClark%5FResume%2Epdf&listurl=%2Fpersonal%2F899675BF6ED04394%2FDocuments&ithint=file%2Cpdf&TeamsCID=11e47caa%2Dba88%2D4c98%2D9859%2Dfdfce7b00317&linkOpenTime=1783015775954&migratedtospo=true&parent=%2Fpersonal%2F899675BF6ED04394%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&wdCid=&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy84OTk2NzVCRjZFRDA0Mzk0L0lRQlRPOW1YaGd3alJxeWJiR0FhRGJJdkFkME1UT0Z1WWZLSW9MLXNNMy1Mc3EwP1RlYW1zQ0lEPTExZTQ3Y2FhLWJhODgtNGM5OC05ODU5LWZkZmNlN2IwMDMxNyZsaW5rT3BlblRpbWU9MTc4MzAxNTc3NTk1NA&ga=1" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Resume ↓</a></li>
@@ -424,19 +424,84 @@ function App() {
 
 
         {/* Contact Section */}
-        <section id="contact" className="contact-section fade-in-section">
-          <div className="contact-container">
-            <h2 className="contact-title">Let's Build Intelligent Systems Together</h2>
-            <p className="contact-desc">
-              Whether you're scaling AI infrastructure, deploying production ML, or building LLM-powered products, I'd love to connect.
-            </p>
-            <div className="contact-actions">
-              <a href="#" className="contact-btn primary">Email Me</a>
-              <a href="#" className="contact-btn secondary">LinkedIn</a>
-              <a href="#" className="contact-btn secondary">Phone</a>
+        <div className="contact-section-wrapper">
+          <section id="contact" className="contact-section fade-in-section">
+            <div className="section-header center-align" style={{ marginBottom: '4rem' }}>
+              <span className="section-subtitle" style={{ color: '#00D9FF', fontFamily: 'monospace', fontStyle: 'normal', fontSize: '0.85rem', letterSpacing: '1px', textTransform: 'uppercase' }}>// Secure Communication Link</span>
+              <h2 className="section-title" style={{ color: '#ffffff', marginTop: '1rem' }}>Transmit Telemetry Signal</h2>
             </div>
-          </div>
-        </section>
+            
+            <div className="contact-grid">
+              <div className="contact-info">
+                <h3>Contact Directory</h3>
+                <p>Connect with David Clark for large-scale Deep Learning architecture, MLOps orchestration, high-throughput backend consulting, or leadership opportunities.</p>
+                
+                <div className="contact-cards">
+                  <div className="ci-card">
+                    <div className="ci-icon" style={{ color: '#00D9FF' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <div className="ci-text">
+                      <span className="ci-label">PRIMARY EMAIL</span>
+                      <span className="ci-value">david@example.com</span>
+                    </div>
+                  </div>
+                  
+                  <div className="ci-card">
+                    <div className="ci-icon" style={{ color: '#a855f7' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <div className="ci-text">
+                      <span className="ci-label">DIRECT TELEPHONY</span>
+                      <span className="ci-value">(646) 478-1356</span>
+                    </div>
+                  </div>
+
+                  <div className="ci-card">
+                    <div className="ci-icon" style={{ color: '#22c55e' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <div className="ci-text">
+                      <span className="ci-label">OPERATING BASE</span>
+                      <span className="ci-value">Kansas City, MO</span>
+                    </div>
+                  </div>
+
+                  <div className="ci-card">
+                    <div className="ci-icon" style={{ color: '#3b82f6' }}>
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </div>
+                    <div className="ci-text">
+                      <span className="ci-label">PROFESSIONAL LINK</span>
+                      <span className="ci-value">linkedin.com/in/david</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="contact-form-container">
+                <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                  <div className="form-group">
+                    <input type="text" placeholder="ENTITY NAME" required />
+                  </div>
+                  <div className="form-group">
+                    <input type="email" placeholder="SIGNAL RETURN ADDRESS (EMAIL)" required />
+                  </div>
+                  <div className="form-group">
+                    <input type="text" placeholder="TRANSMISSION KEY / SUBJECT" required />
+                  </div>
+                  <div className="form-group">
+                    <textarea placeholder="PAYLOAD BODY (MESSAGE)" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" className="submit-btn">
+                    TRANSMIT TELEMETRY STREAM
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
 
       </div>
       
