@@ -65,7 +65,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--text-main);
+  color: #9FD458;
 }
 
 .nav-btn {
@@ -79,6 +79,12 @@ body {
   font-size: 0.9rem;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #9FD458;
+  color: #000;
 }
 
 /* Hero Section */
@@ -138,6 +144,12 @@ body {
   margin-bottom: 0.8rem;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: #9FD458;
+  color: #000;
 }
 
 .subtext {
@@ -960,7 +972,7 @@ body {
   text-transform: uppercase;
 }
 .outcomes-number {
-  color: #b3f062; /* Bright green */
+  color: #9FD458; /* Secondary accent color */
   font-family: monospace;
   margin-right: 1.5rem;
 }
@@ -992,7 +1004,7 @@ body {
 .outcome-value {
   font-size: 4rem;
   font-weight: 600;
-  color: #b3f062; /* Bright green */
+  color: #9FD458; /* Secondary accent color */
   margin: 0 0 1rem 0;
   line-height: 1;
   letter-spacing: -2px;
@@ -1110,7 +1122,9 @@ body {
   border: 1px solid #111;
 }
 .contact-btn.secondary:hover {
-  background: #fff;
+  background: #9FD458;
+  color: #000;
+  border-color: #9FD458;
 }
 
 /* Footer */
