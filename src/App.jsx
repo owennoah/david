@@ -69,13 +69,11 @@ function App() {
         </div>
         <div className={`nav-center ${menuOpen ? 'open' : ''}`}>
           <ul className="nav-links">
-            <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-            <li><a href="#highlights" onClick={() => setMenuOpen(false)}>Highlights</a></li>
-            <li><a href="#expertise" onClick={() => setMenuOpen(false)}>Technical Expertise</a></li>
-            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects / Case Studies</a></li>
-            <li><a href="#achievements" onClick={() => setMenuOpen(false)}>Achievements</a></li>
-            <li><a href="#education" onClick={() => setMenuOpen(false)}>Education</a></li>
+            <li><a href="#highlights" onClick={() => setMenuOpen(false)}>Impact</a></li>
+            <li><a href="#timeline" onClick={() => setMenuOpen(false)}>Experience</a></li>
+            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
+            <li><a href="#expertise" onClick={() => setMenuOpen(false)}>Skills</a></li>
           </ul>
         </div>
         <div className="nav-right">
