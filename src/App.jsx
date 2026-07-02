@@ -109,12 +109,11 @@ function App() {
             <div className="divider"></div>
             
             <div className="clients-section">
-              <p>We've worked with</p>
+              <p>Trusted Technologies</p>
               <div className="client-logos">
-                <span className="logo pitch">Pitch</span>
-                <span className="logo brandfetch">Brandfetch</span>
-                <span className="logo google">Google</span>
-                <span className="logo tokopedia">tokopedia</span>
+                {techStack.slice(0, 6).map((tech, idx) => (
+                  <img key={`hero-tech-${idx}`} src={`https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/${tech.icon}.svg`} alt={tech.name} className="tech-icon-small" title={tech.name} />
+                ))}
               </div>
             </div>
           </div>
