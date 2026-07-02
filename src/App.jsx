@@ -208,6 +208,78 @@ function App() {
           </div>
         </section>
 
+        {/* Impact Numbers Section */}
+        <section id="achievements" className="achievements-section fade-in-section">
+          <div className="section-header center-align">
+            <span className="section-subtitle">/ Impact</span>
+            <h2 className="section-title">By The Numbers</h2>
+          </div>
+          <div className="editorial-stats">
+            <div className="stat-item">
+              <span className="stat-value">10+</span>
+              <span className="stat-label">Years Experience</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">100K+</span>
+              <span className="stat-label">Daily Requests</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">10M+</span>
+              <span className="stat-label">Events Processed</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">99.9%</span>
+              <span className="stat-label">Uptime</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">35%</span>
+              <span className="stat-label">Latency Reduction</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">28%</span>
+              <span className="stat-label">Accuracy Increase</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">50%</span>
+              <span className="stat-label">Deployment Speed</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-value">40%</span>
+              <span className="stat-label">Drift Reduction</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Education Section */}
+        <section id="education" className="timeline-section fade-in-section">
+          <div className="section-header center-align">
+            <span className="section-subtitle">/ Education</span>
+            <h2 className="section-title">Academic Background</h2>
+          </div>
+          <div className="timeline-container">
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>M.S. Computer Science</h3>
+                  <span className="tl-date">2014 – 2016</span>
+                </div>
+                <span className="tl-role">Stratford University</span>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>Bachelor of Science</h3>
+                  <span className="tl-date">2011 – 2014</span>
+                </div>
+                <span className="tl-role">Computer Science</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="highlights" className="highlights-section fade-in-section">
           <div className="section-header center-align">
             <span className="section-subtitle">/ Career Highlights</span>
@@ -234,180 +306,91 @@ function App() {
           </div>
         </section>
 
-        <section id="expertise" className="dashboard-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Technical Expertise</span>
-            <h2 className="section-title">Core Competencies</h2>
+        <section id="expertise" className="toolbox-section fade-in-section">
+          <div className="section-header">
+            <span className="section-subtitle">06 &mdash; STACK</span>
+            <h2 className="section-title">The toolbox.</h2>
           </div>
           
-          <div className="dashboard-grid">
-            <div className="dash-col-left">
-              {/* Top Left: AI & Data */}
-              <div className="dash-card tall-card">
-                 <div className="card-tabs">
-                   <span className={`tab ${activeTab === 'overview' ? 'active' : ''}`} onClick={() => setActiveTab('overview')}>Overview</span>
-                   <span className={`tab ${activeTab === 'ai' ? 'active' : ''}`} onClick={() => setActiveTab('ai')}>AI Engineering</span>
-                   <span className={`tab ${activeTab === 'data' ? 'active' : ''}`} onClick={() => setActiveTab('data')}>Data Engineering</span>
-                 </div>
-                 
-                 {activeTab === 'overview' && (
-                   <>
-                     <div className="chart-container">
-                        <div className="pie-chart"></div>
-                        <span className="chart-label pos-1">LLMs & RAG</span>
-                        <span className="chart-label pos-2">PyTorch & TF</span>
-                        <span className="chart-label pos-3">Deep Learning</span>
-                        <span className="chart-label pos-4">Kafka & Spark</span>
-                        <span className="chart-label pos-5">Airflow</span>
-                        <span className="chart-label pos-6">PostgreSQL & Mongo</span>
-                        <span className="chart-label pos-7">Redis & Elastic</span>
-                        <span className="chart-label pos-8">NLP</span>
-                     </div>
-                     
-                     <div className="insight-box">
-                        <svg className="lightning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        <p>Your <strong>AI Engineering</strong> and <strong>Data</strong> pipelines form the core of your expertise. Building scalable LLMs and managing real-time streams with Kafka shows a highly adaptable technical foundation.</p>
-                     </div>
-                   </>
-                 )}
-                 
-                 {activeTab === 'ai' && (
-                   <>
-                     <div className="chart-container" style={{ alignContent: 'center', height: '400px' }}>
-                        <div className="skill-tags">
-                          <span className="skill-tag">Large Language Models (LLMs)</span>
-                          <span className="skill-tag">Retrieval-Augmented Gen (RAG)</span>
-                          <span className="skill-tag">Natural Language Processing</span>
-                          <span className="skill-tag">PyTorch</span>
-                          <span className="skill-tag">TensorFlow</span>
-                          <span className="skill-tag">Deep Learning Architectures</span>
-                        </div>
-                     </div>
-                     <div className="insight-box">
-                        <svg className="lightning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        <p>Specialized in designing and fine-tuning <strong>Large Language Models</strong> and building highly accurate <strong>RAG</strong> systems for enterprise AI solutions.</p>
-                     </div>
-                   </>
-                 )}
-                 
-                 {activeTab === 'data' && (
-                   <>
-                     <div className="chart-container" style={{ alignContent: 'center', height: '400px' }}>
-                        <div className="skill-tags">
-                          <span className="skill-tag">Apache Kafka</span>
-                          <span className="skill-tag">Apache Spark</span>
-                          <span className="skill-tag">Airflow</span>
-                          <span className="skill-tag">PostgreSQL</span>
-                          <span className="skill-tag">MongoDB</span>
-                          <span className="skill-tag">Redis</span>
-                          <span className="skill-tag">Elasticsearch</span>
-                        </div>
-                     </div>
-                     <div className="insight-box">
-                        <svg className="lightning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        <p>Extensive experience in designing scalable event-driven architectures with <strong>Kafka</strong> and <strong>Spark</strong>, backed by robust SQL and NoSQL data stores.</p>
-                     </div>
-                   </>
-                 )}
+          <div className="toolbox-grid">
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">AI Engineering</h3>
+                <span className="toolbox-number">01</span>
               </div>
-              
-              {/* Bottom Left: Cloud */}
-              <div className="dash-card">
-                <div className="card-header-flex">
-                  <h3 className="card-title">Cloud Infrastructure</h3>
-                  <span className="info-icon">!</span>
-                </div>
-                <div className="gauge-wrapper">
-                  <div className="gauge-chart">
-                    <svg viewBox="0 0 100 55" className="gauge-svg">
-                      <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#f0f0f0" strokeWidth="12" strokeLinecap="round" />
-                      <path d="M 10 50 A 40 40 0 0 1 45 12" fill="none" stroke="#9b8af4" strokeWidth="12" strokeLinecap="round" />
-                      <path d="M 45 12 A 40 40 0 0 1 75 22" fill="none" stroke="#ffaf7a" strokeWidth="12" strokeLinecap="round" />
-                      <path d="M 75 22 A 40 40 0 0 1 85 40" fill="none" stroke="#3dd3e6" strokeWidth="12" strokeLinecap="round" />
-                    </svg>
-                  </div>
-                  <div className="gauge-legend">
-                    <div className="legend-item"><span className="dot purple"></span> AWS (46%)</div>
-                    <div className="legend-item"><span className="dot orange"></span> Docker/K8s (24%)</div>
-                    <div className="legend-item"><span className="dot cyan"></span> Terraform (15%)</div>
-                  </div>
-                </div>
-                <div className="insight-box">
-                    <svg className="lightning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                    <p>Infrastructure as code and containerization drive your deployments. Your focus on <strong>Kubernetes</strong> and <strong>AWS</strong> ensures robust, high-availability ML platforms.</p>
-                 </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">LLMs</span>
+                <span className="tb-tag">RAG</span>
+                <span className="tb-tag">PYTORCH</span>
+                <span className="tb-tag">TENSORFLOW</span>
+                <span className="tb-tag">NLP</span>
+                <span className="tb-tag">DEEP LEARNING</span>
               </div>
             </div>
             
-            <div className="dash-col-right">
-              {/* Top Right: DevOps */}
-              <div className="dash-card">
-                <div className="card-header-flex">
-                  <h3 className="card-title">DevOps Workflows</h3>
-                  <span className="info-icon">!</span>
-                </div>
-                <div className="checklist">
-                  <div className="check-item">
-                    <div className="checkbox checked"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-                    <div className="check-text">
-                      <strong>CI/CD Pipelines</strong>
-                      <span>Automated testing & deployments</span>
-                    </div>
-                  </div>
-                  <div className="check-item">
-                    <div className="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-                    <div className="check-text">
-                      <strong>GitHub & GitLab</strong>
-                      <span>Version control & Actions</span>
-                    </div>
-                  </div>
-                  <div className="check-item">
-                    <div className="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-                    <div className="check-text">
-                      <strong>Prometheus</strong>
-                      <span>Metrics and alerting setup</span>
-                    </div>
-                  </div>
-                  <div className="check-item">
-                    <div className="checkbox"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
-                    <div className="check-text">
-                      <strong>Grafana</strong>
-                      <span>System observability dashboards</span>
-                    </div>
-                  </div>
-                </div>
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">Data Engineering</h3>
+                <span className="toolbox-number">02</span>
               </div>
-              
-              {/* Bottom Right: Backend */}
-              <div className="dash-card">
-                <div className="card-header-flex">
-                  <h3 className="card-title">Backend Skills</h3>
-                  <span className="info-icon">!</span>
-                </div>
-                <div className="progress-list">
-                  <span className="progress-group-title">Core languages & APIs:</span>
-                  
-                  <div className="progress-item">
-                    <div className="progress-info"><span>Python</span><span>95%</span></div>
-                    <div className="progress-bar"><div className="progress-fill purple-fill" style={{width: '95%'}}></div></div>
-                  </div>
-                  <div className="progress-item">
-                    <div className="progress-info"><span>Go</span><span>85%</span></div>
-                    <div className="progress-bar"><div className="progress-fill purple-fill" style={{width: '85%'}}></div></div>
-                  </div>
-                  <div className="progress-item">
-                    <div className="progress-info"><span>Node.js</span><span>75%</span></div>
-                    <div className="progress-bar"><div className="progress-fill purple-fill" style={{width: '75%'}}></div></div>
-                  </div>
-                  <div className="progress-item">
-                    <div className="progress-info"><span>Java</span><span>70%</span></div>
-                    <div className="progress-bar"><div className="progress-fill purple-fill" style={{width: '70%'}}></div></div>
-                  </div>
-                  <div className="progress-item">
-                    <div className="progress-info"><span>REST APIs</span><span>92%</span></div>
-                    <div className="progress-bar"><div className="progress-fill purple-fill" style={{width: '92%'}}></div></div>
-                  </div>
-                </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">APACHE KAFKA</span>
+                <span className="tb-tag">APACHE SPARK</span>
+                <span className="tb-tag">AIRFLOW</span>
+                <span className="tb-tag">REDIS</span>
+                <span className="tb-tag">ELASTICSEARCH</span>
+              </div>
+            </div>
+
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">Backend</h3>
+                <span className="toolbox-number">03</span>
+              </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">PYTHON</span>
+                <span className="tb-tag">GO</span>
+                <span className="tb-tag">NODE.JS</span>
+                <span className="tb-tag">JAVA</span>
+                <span className="tb-tag">REST APIS</span>
+              </div>
+            </div>
+
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">Cloud Infrastructure</h3>
+                <span className="toolbox-number">04</span>
+              </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">AWS</span>
+                <span className="tb-tag">DOCKER</span>
+                <span className="tb-tag">KUBERNETES</span>
+                <span className="tb-tag">TERRAFORM</span>
+              </div>
+            </div>
+
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">DevOps & Observability</h3>
+                <span className="toolbox-number">05</span>
+              </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">CI/CD PIPELINES</span>
+                <span className="tb-tag">GITHUB ACTIONS</span>
+                <span className="tb-tag">PROMETHEUS</span>
+                <span className="tb-tag">GRAFANA</span>
+              </div>
+            </div>
+
+            <div className="dash-card toolbox-card">
+              <div className="card-header-flex">
+                <h3 className="card-title">Databases</h3>
+                <span className="toolbox-number">06</span>
+              </div>
+              <div className="toolbox-tags">
+                <span className="tb-tag">POSTGRESQL</span>
+                <span className="tb-tag">MONGODB</span>
+                <span className="tb-tag">VECTOR DATABASES</span>
               </div>
             </div>
           </div>
@@ -532,8 +515,8 @@ function App() {
         {/* Projects Section */}
         <section id="projects" className="projects-section fade-in-section">
           <div className="section-header center-align">
-            <span className="section-subtitle">/ Featured Projects</span>
-            <h2 className="section-title">Case Studies</h2>
+            <span className="section-subtitle">/ Work</span>
+            <h2 className="section-title">Featured Projects</h2>
           </div>
           <div className="projects-grid">
             <div className="project-card">
@@ -572,77 +555,7 @@ function App() {
           </div>
         </section>
 
-        {/* Impact Numbers Section */}
-        <section id="achievements" className="achievements-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Impact</span>
-            <h2 className="section-title">By The Numbers</h2>
-          </div>
-          <div className="editorial-stats">
-            <div className="stat-item">
-              <span className="stat-value">10+</span>
-              <span className="stat-label">Years Experience</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">100K+</span>
-              <span className="stat-label">Daily Requests</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">10M+</span>
-              <span className="stat-label">Events Processed</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">99.9%</span>
-              <span className="stat-label">Uptime</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">35%</span>
-              <span className="stat-label">Latency Reduction</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">28%</span>
-              <span className="stat-label">Accuracy Increase</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">50%</span>
-              <span className="stat-label">Deployment Speed</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">40%</span>
-              <span className="stat-label">Drift Reduction</span>
-            </div>
-          </div>
-        </section>
 
-        {/* Education Section */}
-        <section id="education" className="timeline-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Education</span>
-            <h2 className="section-title">Academic Background</h2>
-          </div>
-          <div className="timeline-container">
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>M.S. Computer Science</h3>
-                  <span className="tl-date">2014 – 2016</span>
-                </div>
-                <span className="tl-role">Stratford University</span>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Bachelor of Science</h3>
-                  <span className="tl-date">2011 – 2014</span>
-                </div>
-                <span className="tl-role">Computer Science</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Contact Section */}
         <section id="contact" className="contact-section fade-in-section">
