@@ -436,6 +436,7 @@ function App() {
           </div>
           
           <div className="projects-grid">
+            {/* Project 1 */}
             <div className="project-showcase-card">
               <div className="project-graphic">
                 <div className="pg-bg-glow"></div>
@@ -475,6 +476,151 @@ function App() {
                   <div className="project-metric">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                     <span>5,000+ requests/sec Supported</span>
+                  </div>
+                  <button className="project-link">
+                    Diagnostics
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="project-showcase-card">
+              <div className="project-graphic">
+                <div className="pg-bg-glow"></div>
+                <div className="pg-content">
+                  <div className="pg-node pg-source">
+                    <span className="pg-title">Kafka Stream</span>
+                    <span className="pg-sub">10M+ events</span>
+                  </div>
+                  <div className="pg-line">
+                    <div className="pg-pulse-dot"></div>
+                  </div>
+                  <div className="pg-node pg-target">
+                    <span className="pg-title">XGBoost Model</span>
+                    <span className="pg-sub">+28% Acc</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-header">
+                  <span className="project-category">ML/DL // Event Intelligence</span>
+                  <h3 className="project-title-hover">Global Event Forecasting Platform</h3>
+                </div>
+                <p className="project-desc">
+                  Architected and deployed an enterprise-grade AI event intelligence pipeline capable of processing 10M+ global events in real-time for PredictHQ.
+                </p>
+                
+                <div className="project-tech-tags">
+                  <span>PyTorch</span>
+                  <span>XGBoost</span>
+                  <span>Kafka</span>
+                  <span>AWS</span>
+                  <span className="tech-more">NLP</span>
+                </div>
+
+                <div className="project-footer">
+                  <div className="project-metric">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>28% Forecasting Accuracy Boost</span>
+                  </div>
+                  <button className="project-link">
+                    Diagnostics
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="project-showcase-card">
+              <div className="project-graphic">
+                <div className="pg-bg-glow"></div>
+                <div className="pg-content">
+                  <div className="pg-node pg-source">
+                    <span className="pg-title">Audio Ingest</span>
+                    <span className="pg-sub">1TB/day</span>
+                  </div>
+                  <div className="pg-line">
+                    <div className="pg-pulse-dot"></div>
+                  </div>
+                  <div className="pg-node pg-target">
+                    <span className="pg-title">Feature Extract</span>
+                    <span className="pg-sub">99% Uptime</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-header">
+                  <span className="project-category">Data Eng // Voice AI</span>
+                  <h3 className="project-title-hover">Voice Recognition Data Infrastructure</h3>
+                </div>
+                <p className="project-desc">
+                  Led the development of robust data infrastructure supporting large-scale AI model advancements in voice recognition technologies at Mycroft AI Inc.
+                </p>
+                
+                <div className="project-tech-tags">
+                  <span>Python</span>
+                  <span>Spark</span>
+                  <span>Airflow</span>
+                  <span className="tech-more">Deep Learning</span>
+                </div>
+
+                <div className="project-footer">
+                  <div className="project-metric">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>Robust Data Infrastructure</span>
+                  </div>
+                  <button className="project-link">
+                    Diagnostics
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="project-showcase-card">
+              <div className="project-graphic">
+                <div className="pg-bg-glow"></div>
+                <div className="pg-content">
+                  <div className="pg-node pg-source">
+                    <span className="pg-title">Raw Datasets</span>
+                    <span className="pg-sub">500M+ rows</span>
+                  </div>
+                  <div className="pg-line">
+                    <div className="pg-pulse-dot"></div>
+                  </div>
+                  <div className="pg-node pg-target">
+                    <span className="pg-title">Predict Model</span>
+                    <span className="pg-sub">3x ROI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-header">
+                  <span className="project-category">ML/DL // Predictive Analytics</span>
+                  <h3 className="project-title-hover">Audience Targeting System</h3>
+                </div>
+                <p className="project-desc">
+                  Provided advanced predictive analytics to enhance audience targeting and engagement strategies for political and corporate clients at Civis Analytics.
+                </p>
+                
+                <div className="project-tech-tags">
+                  <span>ML</span>
+                  <span>R</span>
+                  <span>SQL</span>
+                  <span className="tech-more">Python</span>
+                </div>
+
+                <div className="project-footer">
+                  <div className="project-metric">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>Enhanced Engagement Strategies</span>
                   </div>
                   <button className="project-link">
                     Diagnostics
