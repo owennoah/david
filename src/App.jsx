@@ -379,7 +379,6 @@ function App() {
                 <div className="tl-summary" onClick={() => toggleTimeline('PredictHQ')} style={{ cursor: 'pointer' }}>
                   <div className="tl-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
                       <h3>PredictHQ</h3>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -387,7 +386,10 @@ function App() {
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PredictHQ' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </div>
                   </div>
-                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Principal AI Platform Engineer</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.2rem' }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    <span className="tl-role" style={{ display: 'block', margin: 0 }}>Principal AI Platform Engineer</span>
+                  </div>
                 </div>
                 {expandedTimeline === 'PredictHQ' && (
                   <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
@@ -404,7 +406,6 @@ function App() {
                 <div className="tl-summary" onClick={() => toggleTimeline('PreziAI')} style={{ cursor: 'pointer' }}>
                   <div className="tl-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
                       <h3>Prezi</h3>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -412,7 +413,10 @@ function App() {
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PreziAI' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </div>
                   </div>
-                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>AI Platform Engineer</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.2rem' }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
+                    <span className="tl-role" style={{ display: 'block', margin: 0 }}>AI Platform Engineer</span>
+                  </div>
                 </div>
                 {expandedTimeline === 'PreziAI' && (
                   <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
@@ -429,7 +433,6 @@ function App() {
                 <div className="tl-summary" onClick={() => toggleTimeline('PreziFS')} style={{ cursor: 'pointer' }}>
                   <div className="tl-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                       <h3>Prezi</h3>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -437,7 +440,10 @@ function App() {
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PreziFS' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </div>
                   </div>
-                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Senior Full Stack Engineer</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.2rem' }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    <span className="tl-role" style={{ display: 'block', margin: 0 }}>Senior Full Stack Engineer</span>
+                  </div>
                 </div>
                 {expandedTimeline === 'PreziFS' && (
                   <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
@@ -454,7 +460,6 @@ function App() {
                 <div className="tl-summary" onClick={() => toggleTimeline('Trbhi')} style={{ cursor: 'pointer' }}>
                   <div className="tl-header">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                       <h3>Trbhi</h3>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -462,7 +467,10 @@ function App() {
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'Trbhi' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </div>
                   </div>
-                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Full Stack Engineer</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.2rem' }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    <span className="tl-role" style={{ display: 'block', margin: 0 }}>Full Stack Engineer</span>
+                  </div>
                 </div>
                 {expandedTimeline === 'Trbhi' && (
                   <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
