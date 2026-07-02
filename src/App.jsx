@@ -24,6 +24,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('overview');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -46,11 +47,17 @@ function App() {
       }
     };
     
+    const handleMouseMove = (e) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+    
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
@@ -90,6 +97,16 @@ function App() {
 
       <div className="sections-container">
         <section id="home" className="hero-section">
+          {/* Background Parallax Text */}
+          <div 
+            className="hero-bg-text"
+            style={{ 
+              transform: `translate(${mousePos.x * -0.02}px, ${mousePos.y * -0.02}px)` 
+            }}
+          >
+            Principal AI<br/>Platform Engineer
+          </div>
+
           <div className="hero-left">
             <div className="icon-wrapper">
                <svg width="24" height="24" viewBox="0 0 24 24" fill="#0066ff" stroke="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -265,35 +282,6 @@ function App() {
           </section>
         </div>
 
-        {/* Education Section */}
-        <section id="education" className="timeline-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Education</span>
-            <h2 className="section-title">Academic Background</h2>
-          </div>
-          <div className="timeline-container">
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>M.S. Computer Science</h3>
-                  <span className="tl-date">2014 – 2016</span>
-                </div>
-                <span className="tl-role">Stratford University</span>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Bachelor of Science</h3>
-                  <span className="tl-date">2011 – 2014</span>
-                </div>
-                <span className="tl-role">Computer Science</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="expertise" className="toolbox-section fade-in-section">
           <div className="section-header">
