@@ -537,11 +537,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .highlights-grid {
-    grid-template-columns: 1fr;
-  }
-}
+/* Highlights remain 2 columns on small mobile */
 
 /* Dashboard / Expertise Section */
 .dashboard-section {
@@ -1171,7 +1167,7 @@ body {
 
 @media (max-width: 768px) {
   .editorial-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     border-top: none;
     border-left: none;
     gap: 1rem;
@@ -1180,8 +1176,14 @@ body {
     grid-column: span 1 !important;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1rem;
     min-height: auto;
+  }
+  .stat-value {
+    font-size: 2.2rem;
+  }
+  .stat-label {
+    font-size: 0.8rem;
   }
 }
 
@@ -1400,5 +1402,73 @@ body {
   .nav-links a:hover {
     background: #f8f9fc;
     color: #000;
+  }
+}
+
+/* Global Mobile Adjustments */
+@media (max-width: 768px) {
+  /* Headings */
+  .section-title { font-size: 2.2rem; margin-bottom: 2rem; }
+  .about-title { font-size: 2.5rem; margin-bottom: 2rem; }
+  .contact-title { font-size: 2.2rem; }
+
+  /* Sections Paddings */
+  .about-section, .highlights-section, .dashboard-section, 
+  .timeline-section, .projects-section, .achievements-section, .contact-section {
+    padding: 4rem 1.5rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .hero-left {
+    padding: 0;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1.05rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .subtext {
+    margin-bottom: 2rem;
+  }
+  .image-container {
+    height: 320px;
+  }
+  .stats-row {
+    flex-direction: column;
+    height: auto;
+  }
+  .stat-box {
+    padding: 2rem;
+    min-height: 180px;
+  }
+  .client-logos {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  /* About Stack */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .about-bio { margin-bottom: 2.5rem; }
+  
+  /* Projects & Expertise Grids */
+  .projects-grid { grid-template-columns: 1fr; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  
+  /* Expertise Info Card on Mobile */
+  .dash-col-left, .dash-col-right {
+    gap: 1rem;
   }
 }
