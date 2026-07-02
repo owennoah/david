@@ -1140,9 +1140,9 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 1rem 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
 .project-showcase-card {
@@ -1163,7 +1163,7 @@ body {
 }
 
 .project-graphic {
-  height: 11rem;
+  height: 8rem;
   position: relative;
   background-color: #0c0c0c;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -1255,19 +1255,19 @@ body {
 }
 
 .front-header {
-  padding: 1.5rem;
+  padding: 1rem;
   background: rgba(20, 20, 20, 0.4);
 }
 
 .card-back {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
   .project-showcase-card {
-    height: 380px;
+    height: 320px;
   }
   .card-front {
     transition: opacity 0.3s ease;
@@ -1339,12 +1339,12 @@ body {
 
 .project-desc {
   color: #8b95a5;
-  font-size: 0.85rem;
-  line-height: 1.6;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
