@@ -385,121 +385,6 @@ function App() {
           </div>
         </section>
 
-        <section id="timeline" className="timeline-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Experience</span>
-            <h2 className="section-title">Career Timeline</h2>
-          </div>
-          
-          <div className="timeline-container">
-            {/* PredictHQ */}
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>PredictHQ</h3>
-                  <span className="tl-date">2022 – Present</span>
-                </div>
-                <span className="tl-role">Principal AI Platform Engineer</span>
-                
-                <div className="tl-cards-grid check-cards">
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Built AI event intelligence pipeline
-                  </div>
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Processed 10M+ global events
-                  </div>
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Increased forecasting accuracy by 28%
-                  </div>
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Reduced latency by 35%
-                  </div>
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Supported 100K+ daily API requests
-                  </div>
-                  <div className="tl-card">
-                    <svg className="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    Achieved 99.9% uptime
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Prezi */}
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Prezi</h3>
-                  <span className="tl-date">2020 – 2022</span>
-                </div>
-                <span className="tl-role">AI Platform Engineer</span>
-                
-                <div className="tl-cards-grid stat-cards">
-                  <div className="tl-stat-card">
-                    <span className="stat-num">20%</span>
-                    <span className="stat-desc">User Engagement<br/>Increase</span>
-                  </div>
-                  <div className="tl-stat-card">
-                    <span className="stat-num">25%</span>
-                    <span className="stat-desc">NLP<br/>Accuracy</span>
-                  </div>
-                  <div className="tl-stat-card">
-                    <span className="stat-num">35%</span>
-                    <span className="stat-desc">Pipeline Speed<br/>Improvement</span>
-                  </div>
-                  <div className="tl-stat-card">
-                    <span className="stat-num">15%</span>
-                    <span className="stat-desc">Retention<br/>Growth</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Senior Full Stack Engineer */}
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Senior Full Stack Engineer</h3>
-                  <span className="tl-date">2017 – 2020</span>
-                </div>
-                <div className="tl-tags" style={{marginTop: '1rem'}}>
-                  <span className="tl-tag">React</span>
-                  <span className="tl-tag">Node</span>
-                  <span className="tl-tag">Python</span>
-                  <span className="tl-tag">Microservices</span>
-                  <span className="tl-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Full Stack Engineer */}
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Full Stack Engineer</h3>
-                  <span className="tl-date">2014 – 2017</span>
-                </div>
-                <div className="tl-tags" style={{marginTop: '1rem'}}>
-                  <span className="tl-tag">React</span>
-                  <span className="tl-tag">MongoDB</span>
-                  <span className="tl-tag">Jenkins</span>
-                  <span className="tl-tag">CI/CD</span>
-                  <span className="tl-tag">Testing</span>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </section>
 
         {/* Projects Section */}
         <section id="projects" className="projects-section fade-in-section">
@@ -509,37 +394,66 @@ function App() {
           </div>
           <div className="projects-grid">
             <div className="project-card">
-              <h3>AI Event Intelligence Platform</h3>
-              <div className="project-tags">
-                <span className="p-tag">10M+ events processed</span>
-                <span className="p-tag">ML forecasting</span>
-                <span className="p-tag">Kafka streaming</span>
-                <span className="p-tag">AWS deployment</span>
-              </div>
+              <h3>PredictHQ</h3>
+              <h4>Principal AI Platform Engineer</h4>
+              <span className="p-date">Sep 2022 – Present</span>
+              <ul>
+                <li>Built AI-driven event intelligence pipelines processing 10M+ global events, boosting forecasting accuracy by 28%.</li>
+                <li>Trained machine learning models with XGBoost and PyTorch, increasing inference throughput by 22% in production.</li>
+                <li>Cut data latency by 35% through real-time ingestion pipelines using Kafka and AWS.</li>
+                <li>Elevated feature quality by 18% via advanced temporal and geospatial feature engineering.</li>
+                <li>Established automated model retraining and monitoring, lowering model drift incidents by 40%.</li>
+                <li>Built NLP-based classification systems, raising event tagging accuracy by 25%.</li>
+                <li>Streamlined hybrid batch and streaming inference, trimming infrastructure costs by 20% while maintaining performance.</li>
+                <li>Supported AI-powered APIs handling 100K+ daily requests with stable low-latency performance.</li>
+                <li>Accelerated API response times by 30% through efficient service architecture and caching strategies.</li>
+                <li>Deployed CI/CD pipelines for ML services, shortening deployment time by 50%.</li>
+                <li>Built observability systems with Prometheus and Grafana, sustaining 99.9% uptime.</li>
+                <li>Mentored engineers on ML system design, strengthening delivery speed and production reliability.</li>
+              </ul>
             </div>
+            
             <div className="project-card">
-              <h3>Recommendation Engine</h3>
-              <div className="project-tags">
-                <span className="p-tag">Personalized content</span>
-                <span className="p-tag">NLP</span>
-                <span className="p-tag">User behavior prediction</span>
-              </div>
+              <h3>Prezi</h3>
+              <h4>AI Platform Engineer</h4>
+              <span className="p-date">Mar 2020 – Aug 2022</span>
+              <ul>
+                <li>Boosted user engagement by 20% by creating recommendation models for personalized content.</li>
+                <li>Built NLP pipelines for slide content analysis, increasing relevance scoring accuracy by 25%.</li>
+                <li>Built user behavior prediction models that raised retention metrics by 15%.</li>
+                <li>Accelerated experimentation cycles by 30% through A/B testing frameworks for AI features.</li>
+                <li>Streamlined data pipelines with Spark, reducing processing time by 35%.</li>
+                <li>Productionized ML models with cross-functional teams, cutting deployment friction by 40%.</li>
+                <li>Enabled real-time content suggestions using React and Flask-based AI features.</li>
+                <li>Delivered backend APIs for ML services, supporting scalable integration across applications.</li>
+              </ul>
             </div>
+
             <div className="project-card">
-              <h3>Real-Time AI APIs</h3>
-              <div className="project-tags">
-                <span className="p-tag">100K+ requests/day</span>
-                <span className="p-tag">Low latency</span>
-                <span className="p-tag">High availability</span>
-              </div>
+              <h3>Prezi</h3>
+              <h4>Senior Full Stack Engineer</h4>
+              <span className="p-date">Feb 2018 – Mar 2020</span>
+              <ul>
+                <li>Boosted frontend performance by 30% by building scalable React and Redux applications.</li>
+                <li>Developed backend services supporting 50K+ daily active users using Node.js and Python.</li>
+                <li>Increased query performance by 25% through efficient PostgreSQL schema design.</li>
+                <li>Cut page load time by 40% with frontend optimization and lazy loading strategies.</li>
+                <li>Strengthened system reliability by transitioning from monolithic to microservices architecture.</li>
+              </ul>
             </div>
+
             <div className="project-card">
-              <h3>ML Deployment Platform</h3>
-              <div className="project-tags">
-                <span className="p-tag">CI/CD</span>
-                <span className="p-tag">Monitoring</span>
-                <span className="p-tag">Automated retraining</span>
-              </div>
+              <h3>Trbhi</h3>
+              <h4>Full Stack Engineer</h4>
+              <span className="p-date">June 2016 – Dec 2017</span>
+              <ul>
+                <li>Built 5+ scalable web applications, increasing transaction efficiency.</li>
+                <li>Enhanced frontend responsiveness using React and Node.js, reducing load times.</li>
+                <li>Re-architected database systems and migrated legacy infrastructure to MongoDB for improved scalability.</li>
+                <li>Improved backend services and implemented CI/CD pipelines with Jenkins, accelerating release cycles.</li>
+                <li>Introduced unit and integration testing across 8+ services, improving system stability.</li>
+                <li>Integrated third-party services, expanding platform capabilities while maintaining 99.9% availability.</li>
+              </ul>
             </div>
           </div>
         </section>
