@@ -25,6 +25,11 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [projectFilter, setProjectFilter] = useState('All');
+  const [expandedTimeline, setExpandedTimeline] = useState(null);
+
+  const toggleTimeline = (company) => {
+    setExpandedTimeline(expandedTimeline === company ? null : company);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -367,55 +372,103 @@ function App() {
           </div>
           
           <div className="timeline-container">
-            {/* Roku */}
-            <div className="timeline-item">
+            {/* PredictHQ */}
+            <div className={`timeline-item ${expandedTimeline === 'PredictHQ' ? 'expanded' : ''}`}>
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Roku</h3>
-                  <span className="tl-date">09/2023 - Present</span>
+                <div className="tl-summary" onClick={() => toggleTimeline('PredictHQ')} style={{ cursor: 'pointer' }}>
+                  <div className="tl-header">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                      <h3>PredictHQ</h3>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <span className="tl-date">09/2022 - Present</span>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PredictHQ' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Principal AI Platform Engineer</span>
                 </div>
-                <span className="tl-role">Senior AI Engineer</span>
-                <p className="tl-desc">Elevated Roku's machine learning capabilities in recommendation systems, enhancing user engagement and ad revenue significantly.</p>
+                {expandedTimeline === 'PredictHQ' && (
+                  <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
+                    Built AI-driven event intelligence pipelines processing 10M+ global events, boosting forecasting accuracy by 28%. Trained machine learning models with XGBoost and PyTorch, cut data latency by 35% through real-time ingestion pipelines using Kafka and AWS.
+                  </p>
+                )}
               </div>
             </div>
 
-            {/* Mycroft AI Inc */}
-            <div className="timeline-item">
+            {/* Prezi (AI Platform Engineer) */}
+            <div className={`timeline-item ${expandedTimeline === 'PreziAI' ? 'expanded' : ''}`}>
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Mycroft AI Inc</h3>
-                  <span className="tl-date">05/2019 - 02/2023</span>
+                <div className="tl-summary" onClick={() => toggleTimeline('PreziAI')} style={{ cursor: 'pointer' }}>
+                  <div className="tl-header">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
+                      <h3>Prezi</h3>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <span className="tl-date">03/2020 - 08/2022</span>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PreziAI' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>AI Platform Engineer</span>
                 </div>
-                <span className="tl-role">Senior Data Engineer</span>
-                <p className="tl-desc">Led the development of a robust data infrastructure supporting AI advancements in voice recognition technologies.</p>
+                {expandedTimeline === 'PreziAI' && (
+                  <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
+                    Boosted user engagement by 20% by creating recommendation models for personalized content. Built NLP pipelines for slide analysis, increasing relevance scoring accuracy by 25%.
+                  </p>
+                )}
               </div>
             </div>
 
-            {/* Enova International */}
-            <div className="timeline-item">
+            {/* Prezi (Full Stack) */}
+            <div className={`timeline-item ${expandedTimeline === 'PreziFS' ? 'expanded' : ''}`}>
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Enova International</h3>
-                  <span className="tl-date">08/2016 - 04/2019</span>
+                <div className="tl-summary" onClick={() => toggleTimeline('PreziFS')} style={{ cursor: 'pointer' }}>
+                  <div className="tl-header">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                      <h3>Prezi</h3>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <span className="tl-date">02/2018 - 03/2020</span>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'PreziFS' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Senior Full Stack Engineer</span>
                 </div>
-                <span className="tl-role">Software Engineer</span>
-                <p className="tl-desc">Enhanced system efficiency and integrated ML models to improve financial decision-making processes.</p>
+                {expandedTimeline === 'PreziFS' && (
+                  <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
+                    Developed backend services supporting 50K+ daily active users using Node.js and Python. Strengthened system reliability by transitioning from monolithic to microservices architecture.
+                  </p>
+                )}
               </div>
             </div>
 
-            {/* Civis Analytics */}
-            <div className="timeline-item">
+            {/* Trbhi */}
+            <div className={`timeline-item ${expandedTimeline === 'Trbhi' ? 'expanded' : ''}`}>
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <div className="tl-header">
-                  <h3>Civis Analytics</h3>
-                  <span className="tl-date">06/2014 - 08/2016</span>
+                <div className="tl-summary" onClick={() => toggleTimeline('Trbhi')} style={{ cursor: 'pointer' }}>
+                  <div className="tl-header">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                      <h3>Trbhi</h3>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <span className="tl-date">06/2016 - 12/2017</span>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expandedTimeline === 'Trbhi' ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                  </div>
+                  <span className="tl-role" style={{ display: 'block', marginTop: '0.2rem' }}>Full Stack Engineer</span>
                 </div>
-                <span className="tl-role">Data Science Researcher</span>
-                <p className="tl-desc">Provided advanced predictive analytics to enhance audience targeting and engagement strategies.</p>
+                {expandedTimeline === 'Trbhi' && (
+                  <p className="tl-desc" style={{ marginTop: '1rem', animation: 'fadeIn 0.3s ease' }}>
+                    Built 5+ scalable web applications and re-architected database systems, migrating legacy infrastructure to MongoDB for improved scalability. Integrated third-party services.
+                  </p>
+                )}
               </div>
             </div>
             
