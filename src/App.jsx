@@ -358,75 +358,66 @@ function App() {
         </section>
 
 
-        {/* Projects Section */}
-        <section id="projects" className="projects-section fade-in-section">
+        {/* Experience Timeline Section */}
+        <section id="experience" className="timeline-section fade-in-section">
           <div className="section-header center-align">
-            <span className="section-subtitle">/ Work</span>
-            <h2 className="section-title">Featured Projects</h2>
+            <span className="section-subtitle">/ Career Sequence</span>
+            <h2 className="section-title">Professional Experience</h2>
           </div>
-          <div className="projects-grid">
-            <div className="project-card">
-              <h3>PredictHQ</h3>
-              <h4>Principal AI Platform Engineer</h4>
-              <span className="p-date">Sep 2022 – Present</span>
-              <ul>
-                <li>Built AI-driven event intelligence pipelines processing 10M+ global events, boosting forecasting accuracy by 28%.</li>
-                <li>Trained machine learning models with XGBoost and PyTorch, increasing inference throughput by 22% in production.</li>
-                <li>Cut data latency by 35% through real-time ingestion pipelines using Kafka and AWS.</li>
-                <li>Elevated feature quality by 18% via advanced temporal and geospatial feature engineering.</li>
-                <li>Established automated model retraining and monitoring, lowering model drift incidents by 40%.</li>
-                <li>Built NLP-based classification systems, raising event tagging accuracy by 25%.</li>
-                <li>Streamlined hybrid batch and streaming inference, trimming infrastructure costs by 20% while maintaining performance.</li>
-                <li>Supported AI-powered APIs handling 100K+ daily requests with stable low-latency performance.</li>
-                <li>Accelerated API response times by 30% through efficient service architecture and caching strategies.</li>
-                <li>Deployed CI/CD pipelines for ML services, shortening deployment time by 50%.</li>
-                <li>Built observability systems with Prometheus and Grafana, sustaining 99.9% uptime.</li>
-                <li>Mentored engineers on ML system design, strengthening delivery speed and production reliability.</li>
-              </ul>
+          
+          <div className="timeline-container">
+            {/* Roku */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>Roku</h3>
+                  <span className="tl-date">09/2023 - Present</span>
+                </div>
+                <span className="tl-role">Senior AI Engineer</span>
+                <p className="tl-desc">Elevated Roku's machine learning capabilities in recommendation systems, enhancing user engagement and ad revenue significantly.</p>
+              </div>
+            </div>
+
+            {/* Mycroft AI Inc */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>Mycroft AI Inc</h3>
+                  <span className="tl-date">05/2019 - 02/2023</span>
+                </div>
+                <span className="tl-role">Senior Data Engineer</span>
+                <p className="tl-desc">Led the development of a robust data infrastructure supporting AI advancements in voice recognition technologies.</p>
+              </div>
+            </div>
+
+            {/* Enova International */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>Enova International</h3>
+                  <span className="tl-date">08/2016 - 04/2019</span>
+                </div>
+                <span className="tl-role">Software Engineer</span>
+                <p className="tl-desc">Enhanced system efficiency and integrated ML models to improve financial decision-making processes.</p>
+              </div>
+            </div>
+
+            {/* Civis Analytics */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <div className="tl-header">
+                  <h3>Civis Analytics</h3>
+                  <span className="tl-date">06/2014 - 08/2016</span>
+                </div>
+                <span className="tl-role">Data Science Researcher</span>
+                <p className="tl-desc">Provided advanced predictive analytics to enhance audience targeting and engagement strategies.</p>
+              </div>
             </div>
             
-            <div className="project-card">
-              <h3>Prezi</h3>
-              <h4>AI Platform Engineer</h4>
-              <span className="p-date">Mar 2020 – Aug 2022</span>
-              <ul>
-                <li>Boosted user engagement by 20% by creating recommendation models for personalized content.</li>
-                <li>Built NLP pipelines for slide content analysis, increasing relevance scoring accuracy by 25%.</li>
-                <li>Built user behavior prediction models that raised retention metrics by 15%.</li>
-                <li>Accelerated experimentation cycles by 30% through A/B testing frameworks for AI features.</li>
-                <li>Streamlined data pipelines with Spark, reducing processing time by 35%.</li>
-                <li>Productionized ML models with cross-functional teams, cutting deployment friction by 40%.</li>
-                <li>Enabled real-time content suggestions using React and Flask-based AI features.</li>
-                <li>Delivered backend APIs for ML services, supporting scalable integration across applications.</li>
-              </ul>
-            </div>
-
-            <div className="project-card">
-              <h3>Prezi</h3>
-              <h4>Senior Full Stack Engineer</h4>
-              <span className="p-date">Feb 2018 – Mar 2020</span>
-              <ul>
-                <li>Boosted frontend performance by 30% by building scalable React and Redux applications.</li>
-                <li>Developed backend services supporting 50K+ daily active users using Node.js and Python.</li>
-                <li>Increased query performance by 25% through efficient PostgreSQL schema design.</li>
-                <li>Cut page load time by 40% with frontend optimization and lazy loading strategies.</li>
-                <li>Strengthened system reliability by transitioning from monolithic to microservices architecture.</li>
-              </ul>
-            </div>
-
-            <div className="project-card">
-              <h3>Trbhi</h3>
-              <h4>Full Stack Engineer</h4>
-              <span className="p-date">June 2016 – Dec 2017</span>
-              <ul>
-                <li>Built 5+ scalable web applications, increasing transaction efficiency.</li>
-                <li>Enhanced frontend responsiveness using React and Node.js, reducing load times.</li>
-                <li>Re-architected database systems and migrated legacy infrastructure to MongoDB for improved scalability.</li>
-                <li>Improved backend services and implemented CI/CD pipelines with Jenkins, accelerating release cycles.</li>
-                <li>Introduced unit and integration testing across 8+ services, improving system stability.</li>
-                <li>Integrated third-party services, expanding platform capabilities while maintaining 99.9% availability.</li>
-              </ul>
-            </div>
           </div>
         </section>
 

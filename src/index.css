@@ -725,7 +725,16 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   color: #555;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tl-desc {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+  border-left: 2px solid var(--border-color);
+  padding-left: 1rem;
 }
 
 .tl-cards-grid {
