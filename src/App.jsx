@@ -442,40 +442,40 @@ function App() {
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
                   <div className="pg-node pg-source">
-                    <span className="pg-title">Python/Go API</span>
-                    <span className="pg-sub">5K reqs/sec</span>
+                    <span className="pg-title">Event Streams</span>
+                    <span className="pg-sub">10M+ events</span>
                   </div>
                   <div className="pg-line">
                     <div className="pg-pulse-dot"></div>
                   </div>
                   <div className="pg-node pg-target">
-                    <span className="pg-title">Credit Classifier</span>
-                    <span className="pg-sub">-18% Loss</span>
+                    <span className="pg-title">Forecast Model</span>
+                    <span className="pg-sub">+28% Acc</span>
                   </div>
                 </div>
               </div>
 
               <div className="project-details">
                 <div className="project-header">
-                  <span className="project-category">Software // Enterprise Deployment</span>
-                  <h3 className="project-title-hover">High-Throughput Fintech Engine</h3>
+                  <span className="project-category">AI Platform // Data Pipeline</span>
+                  <h3 className="project-title-hover">PredictHQ AI Platform</h3>
                 </div>
                 <p className="project-desc">
-                  Developed ultra-fast credit scoring microservices supporting 5K+ req/sec with automated shadow deployments for Enova International.
+                  Built AI-driven event intelligence pipelines processing 10M+ global events, boosting forecasting accuracy by 28%. Trimmed infrastructure costs by 20% while maintaining performance.
                 </p>
                 
                 <div className="project-tech-tags">
-                  <span>Go</span>
-                  <span>Python</span>
-                  <span>Microservices</span>
-                  <span>gRPC</span>
-                  <span className="tech-more">+2 more</span>
+                  <span>XGBoost</span>
+                  <span>PyTorch</span>
+                  <span>Kafka</span>
+                  <span>AWS</span>
+                  <span className="tech-more">NLP</span>
                 </div>
 
                 <div className="project-footer">
                   <div className="project-metric">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>5,000+ requests/sec Supported</span>
+                    <span>99.9% Uptime Sustained</span>
                   </div>
                   <button className="project-link">
                     Diagnostics
@@ -491,40 +491,40 @@ function App() {
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
                   <div className="pg-node pg-source">
-                    <span className="pg-title">Kafka Stream</span>
-                    <span className="pg-sub">10M+ events</span>
+                    <span className="pg-title">Slide Content</span>
+                    <span className="pg-sub">Analysis</span>
                   </div>
                   <div className="pg-line">
                     <div className="pg-pulse-dot"></div>
                   </div>
                   <div className="pg-node pg-target">
-                    <span className="pg-title">XGBoost Model</span>
-                    <span className="pg-sub">+28% Acc</span>
+                    <span className="pg-title">Rec. Engine</span>
+                    <span className="pg-sub">+20% Eng</span>
                   </div>
                 </div>
               </div>
 
               <div className="project-details">
                 <div className="project-header">
-                  <span className="project-category">ML/DL // Event Intelligence</span>
-                  <h3 className="project-title-hover">Global Event Forecasting Platform</h3>
+                  <span className="project-category">Machine Learning // NLP</span>
+                  <h3 className="project-title-hover">Prezi AI Platform</h3>
                 </div>
                 <p className="project-desc">
-                  Architected and deployed an enterprise-grade AI event intelligence pipeline capable of processing 10M+ global events in real-time for PredictHQ.
+                  Boosted user engagement by 20% by creating recommendation models for personalized content. Built NLP pipelines for slide analysis, increasing relevance scoring accuracy by 25%.
                 </p>
                 
                 <div className="project-tech-tags">
-                  <span>PyTorch</span>
-                  <span>XGBoost</span>
-                  <span>Kafka</span>
-                  <span>AWS</span>
+                  <span>React</span>
+                  <span>Flask</span>
+                  <span>Spark</span>
+                  <span>Python</span>
                   <span className="tech-more">NLP</span>
                 </div>
 
                 <div className="project-footer">
                   <div className="project-metric">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>28% Forecasting Accuracy Boost</span>
+                    <span>+20% User Engagement</span>
                   </div>
                   <button className="project-link">
                     Diagnostics
@@ -540,39 +540,40 @@ function App() {
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
                   <div className="pg-node pg-source">
-                    <span className="pg-title">Audio Ingest</span>
-                    <span className="pg-sub">1TB/day</span>
+                    <span className="pg-title">Frontend Apps</span>
+                    <span className="pg-sub">React/Redux</span>
                   </div>
                   <div className="pg-line">
                     <div className="pg-pulse-dot"></div>
                   </div>
                   <div className="pg-node pg-target">
-                    <span className="pg-title">Feature Extract</span>
-                    <span className="pg-sub">99% Uptime</span>
+                    <span className="pg-title">Backend APIs</span>
+                    <span className="pg-sub">Microservices</span>
                   </div>
                 </div>
               </div>
 
               <div className="project-details">
                 <div className="project-header">
-                  <span className="project-category">Data Eng // Voice AI</span>
-                  <h3 className="project-title-hover">Voice Recognition Data Infrastructure</h3>
+                  <span className="project-category">Full Stack // Infrastructure</span>
+                  <h3 className="project-title-hover">Prezi Scalable Backend</h3>
                 </div>
                 <p className="project-desc">
-                  Led the development of robust data infrastructure supporting large-scale AI model advancements in voice recognition technologies at Mycroft AI Inc.
+                  Developed backend services supporting 50K+ daily active users using Node.js and Python. Strengthened system reliability by transitioning from monolithic to microservices architecture.
                 </p>
                 
                 <div className="project-tech-tags">
+                  <span>Node.js</span>
                   <span>Python</span>
-                  <span>Spark</span>
-                  <span>Airflow</span>
-                  <span className="tech-more">Deep Learning</span>
+                  <span>React</span>
+                  <span>Redux</span>
+                  <span className="tech-more">PostgreSQL</span>
                 </div>
 
                 <div className="project-footer">
                   <div className="project-metric">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>Robust Data Infrastructure</span>
+                    <span>50K+ Daily Active Users</span>
                   </div>
                   <button className="project-link">
                     Diagnostics
@@ -588,39 +589,40 @@ function App() {
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
                   <div className="pg-node pg-source">
-                    <span className="pg-title">Raw Datasets</span>
-                    <span className="pg-sub">500M+ rows</span>
+                    <span className="pg-title">Legacy Data</span>
+                    <span className="pg-sub">Migration</span>
                   </div>
                   <div className="pg-line">
                     <div className="pg-pulse-dot"></div>
                   </div>
                   <div className="pg-node pg-target">
-                    <span className="pg-title">Predict Model</span>
-                    <span className="pg-sub">3x ROI</span>
+                    <span className="pg-title">MongoDB</span>
+                    <span className="pg-sub">Scalability</span>
                   </div>
                 </div>
               </div>
 
               <div className="project-details">
                 <div className="project-header">
-                  <span className="project-category">ML/DL // Predictive Analytics</span>
-                  <h3 className="project-title-hover">Audience Targeting System</h3>
+                  <span className="project-category">Full Stack // Database</span>
+                  <h3 className="project-title-hover">Trbhi Web Applications</h3>
                 </div>
                 <p className="project-desc">
-                  Provided advanced predictive analytics to enhance audience targeting and engagement strategies for political and corporate clients at Civis Analytics.
+                  Built 5+ scalable web applications and re-architected database systems, migrating legacy infrastructure to MongoDB for improved scalability. Integrated third-party services.
                 </p>
                 
                 <div className="project-tech-tags">
-                  <span>ML</span>
-                  <span>R</span>
-                  <span>SQL</span>
-                  <span className="tech-more">Python</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Jenkins</span>
+                  <span className="tech-more">CI/CD</span>
                 </div>
 
                 <div className="project-footer">
                   <div className="project-metric">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                    <span>Enhanced Engagement Strategies</span>
+                    <span>99.9% Availability</span>
                   </div>
                   <button className="project-link">
                     Diagnostics
