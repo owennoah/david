@@ -1083,6 +1083,20 @@ body {
   }
 }
 /* Engineering Showcases / Projects Section */
+.projects-section-wrapper {
+  background-color: #0c0c0c;
+  color: #fff;
+  width: 100%;
+}
+
+.projects-section-wrapper .section-title {
+  color: #fff;
+}
+
+.projects-section-wrapper .section-subtitle {
+  color: #9FD458;
+}
+
 .projects-section {
   padding: 8rem 0;
   max-width: 1400px;

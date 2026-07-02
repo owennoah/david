@@ -24,6 +24,7 @@ function App() {
   const [activeTab, setActiveTab] = useState('overview');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectFilter, setProjectFilter] = useState('All');
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -422,22 +423,24 @@ function App() {
         </section>
 
         {/* Engineering Showcases / Projects Section */}
-        <section id="projects" className="projects-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Applied Intelligence</span>
-            <h2 className="section-title">Engineering Showcases</h2>
-          </div>
+        <div className="projects-section-wrapper">
+          <section id="projects" className="projects-section fade-in-section">
+            <div className="section-header center-align">
+              <span className="section-subtitle">/ Applied Intelligence</span>
+              <h2 className="section-title">Engineering Showcases</h2>
+            </div>
 
-          <div className="projects-filter">
-            <button className="filter-btn">All</button>
-            <button className="filter-btn">ML/DL</button>
-            <button className="filter-btn">Data Eng</button>
-            <button className="filter-btn active">Software</button>
-          </div>
-          
-          <div className="projects-grid">
-            {/* Project 1 */}
-            <div className="project-showcase-card">
+            <div className="projects-filter">
+              <button className={`filter-btn ${projectFilter === 'All' ? 'active' : ''}`} onClick={() => setProjectFilter('All')}>All</button>
+              <button className={`filter-btn ${projectFilter === 'ML/DL' ? 'active' : ''}`} onClick={() => setProjectFilter('ML/DL')}>ML/DL</button>
+              <button className={`filter-btn ${projectFilter === 'Data Eng' ? 'active' : ''}`} onClick={() => setProjectFilter('Data Eng')}>Data Eng</button>
+              <button className={`filter-btn ${projectFilter === 'Software' ? 'active' : ''}`} onClick={() => setProjectFilter('Software')}>Software</button>
+            </div>
+            
+            <div className="projects-grid">
+              {/* Project 1 */}
+              {(projectFilter === 'All' || projectFilter === 'Data Eng' || projectFilter === 'ML/DL') && (
+              <div className="project-showcase-card">
               <div className="project-graphic">
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
@@ -483,10 +486,11 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div>
+              )}
 
-            {/* Project 2 */}
-            <div className="project-showcase-card">
+              {/* Project 2 */}
+              {(projectFilter === 'All' || projectFilter === 'ML/DL') && (
+              <div className="project-showcase-card">
               <div className="project-graphic">
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
@@ -532,10 +536,11 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div>
+              )}
 
-            {/* Project 3 */}
-            <div className="project-showcase-card">
+              {/* Project 3 */}
+              {(projectFilter === 'All' || projectFilter === 'Software') && (
+              <div className="project-showcase-card">
               <div className="project-graphic">
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
@@ -581,10 +586,11 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div>
+              )}
 
-            {/* Project 4 */}
-            <div className="project-showcase-card">
+              {/* Project 4 */}
+              {(projectFilter === 'All' || projectFilter === 'Software') && (
+              <div className="project-showcase-card">
               <div className="project-graphic">
                 <div className="pg-bg-glow"></div>
                 <div className="pg-content">
@@ -630,9 +636,11 @@ function App() {
                   </button>
                 </div>
               </div>
+              </div>
+              )}
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* Contact Section */}
         <div className="premium-contact-wrapper fade-in-section" id="contact">
