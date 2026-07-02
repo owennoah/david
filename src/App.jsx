@@ -212,7 +212,7 @@ function App() {
         <div className="outcomes-section-wrapper">
           <section id="highlights" className="outcomes-section fade-in-section">
             <div className="outcomes-header">
-              <span className="outcomes-subtitle">/ Impact</span>
+              <span className="section-subtitle">/ Impact</span>
             </div>
             <h2 className="outcomes-title">Delivering Impact.</h2>
 
@@ -297,7 +297,7 @@ function App() {
 
         <section id="expertise" className="toolbox-section fade-in-section">
           <div className="section-header">
-            <span className="section-subtitle">06 &mdash; STACK</span>
+            <span className="section-subtitle">/ Stack</span>
             <h2 className="section-title">The toolbox.</h2>
           </div>
           
