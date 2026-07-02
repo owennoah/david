@@ -1118,25 +1118,33 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: #111;
-  border: 1px solid #222;
-  border-radius: 8px;
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 1rem;
-  transition: border-color 0.2s ease;
+  background: linear-gradient(145deg, rgba(30,30,30,0.4) 0%, rgba(10,10,10,0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
 }
 .ci-card:hover {
-  border-color: #9FD458;
+  border-color: rgba(159, 212, 88, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(159, 212, 88, 0.1);
 }
 .ci-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  background-color: rgba(159, 212, 88, 0.08);
-  border: 1px solid transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: rgba(159, 212, 88, 0.05);
+  border: 1px solid rgba(159, 212, 88, 0.1);
+  transition: all 0.3s ease;
+}
+.ci-card:hover .ci-icon {
+  background-color: rgba(159, 212, 88, 0.15);
+  filter: drop-shadow(0 0 8px rgba(159, 212, 88, 0.4));
 }
 .ci-text {
   display: flex;
@@ -1144,68 +1152,77 @@ body {
 }
 .ci-label {
   font-family: monospace;
-  font-size: 0.7rem;
-  color: #5c677d;
+  font-size: 0.65rem;
+  color: #777;
   text-transform: uppercase;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1.5px;
 }
 .ci-value {
-  font-weight: 600;
-  color: #e2e8f0;
+  font-weight: 400;
+  color: #fff;
   font-size: 0.95rem;
-  font-family: monospace;
+  letter-spacing: 0.5px;
 }
 
 .contact-form-container {
-  background-color: #111;
-  border: 1px solid #222;
-  border-radius: 12px;
-  padding: 2.5rem;
+  background: linear-gradient(180deg, rgba(25,25,25,0.6) 0%, rgba(10,10,10,0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 3rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 .form-group {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .form-group input, .form-group textarea {
   width: 100%;
-  background-color: #0c0c0c;
-  border: 1px solid #222;
-  border-radius: 6px;
-  padding: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
   color: #fff;
   font-family: monospace;
-  font-size: 0.85rem;
-  transition: border-color 0.2s ease;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 .form-group input::placeholder, .form-group textarea::placeholder {
-  color: #5c677d;
+  color: #666;
+  letter-spacing: 1px;
 }
 .form-group input:focus, .form-group textarea:focus {
   outline: none;
-  border-color: #9FD458;
+  border-color: rgba(159, 212, 88, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 4px rgba(159, 212, 88, 0.05);
 }
 .submit-btn {
   width: 100%;
   background: #9FD458;
   color: #000;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 1.2rem;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   cursor: pointer;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
   font-family: monospace;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 15px rgba(159, 212, 88, 0.2);
 }
 .submit-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(159, 212, 88, 0.4);
+}
+.submit-btn:active {
+  transform: translateY(0);
 }
 
 @media (max-width: 900px) {
