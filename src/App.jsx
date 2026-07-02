@@ -209,46 +209,62 @@ function App() {
         </section>
 
         {/* Impact Numbers Section */}
-        <section id="achievements" className="achievements-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Impact</span>
-            <h2 className="section-title">By The Numbers</h2>
-          </div>
-          <div className="editorial-stats">
-            <div className="stat-item">
-              <span className="stat-value">10+</span>
-              <span className="stat-label">Years Experience</span>
+        <div className="outcomes-section-wrapper">
+          <section id="achievements" className="outcomes-section fade-in-section">
+            <div className="outcomes-header">
+              <span className="outcomes-number">03</span>
+              <span className="outcomes-subtitle">— IMPACT</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-value">100K+</span>
-              <span className="stat-label">Daily Requests</span>
+            <h2 className="outcomes-title">Outcomes, in numbers.</h2>
+
+            <div className="outcomes-grid">
+              {/* Row 1: Large Cards (span 2) */}
+              <div className="outcome-card-large">
+                <h3 className="outcome-value">35%</h3>
+                <p className="outcome-text">latency reduction in AI pipelines via architectural optimizations</p>
+                <span className="outcome-company">@ PREDICTHQ</span>
+              </div>
+              <div className="outcome-card-large">
+                <h3 className="outcome-value">10M+</h3>
+                <p className="outcome-text">global events processed daily by highly scalable data streams</p>
+                <span className="outcome-company">@ PREDICTHQ</span>
+              </div>
+              <div className="outcome-card-large">
+                <h3 className="outcome-value">28%</h3>
+                <p className="outcome-text">increase in forecasting accuracy for demand prediction models</p>
+                <span className="outcome-company">@ PREZI</span>
+              </div>
+
+              {/* Row 2: Small Cards (span 1) */}
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">50%</h4>
+                <span className="outcome-small-text">FASTER DEPLOYMENTS</span>
+              </div>
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">40%</h4>
+                <span className="outcome-small-text">DRIFT REDUCTION</span>
+              </div>
+              
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">99.9%</h4>
+                <span className="outcome-small-text">SYSTEM UPTIME</span>
+              </div>
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">100k+</h4>
+                <span className="outcome-small-text">REQ/DAY @ PREDICTHQ</span>
+              </div>
+
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">10+</h4>
+                <span className="outcome-small-text">YEARS EXPERIENCE</span>
+              </div>
+              <div className="outcome-card-small">
+                <h4 className="outcome-small-value">5</h4>
+                <span className="outcome-small-text">ENGINEERS MENTORED</span>
+              </div>
             </div>
-            <div className="stat-item">
-              <span className="stat-value">10M+</span>
-              <span className="stat-label">Events Processed</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">99.9%</span>
-              <span className="stat-label">Uptime</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">35%</span>
-              <span className="stat-label">Latency Reduction</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">28%</span>
-              <span className="stat-label">Accuracy Increase</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">50%</span>
-              <span className="stat-label">Deployment Speed</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-value">40%</span>
-              <span className="stat-label">Drift Reduction</span>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* Education Section */}
         <section id="education" className="timeline-section fade-in-section">
