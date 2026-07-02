@@ -421,7 +421,70 @@ function App() {
           </div>
         </section>
 
+        {/* Engineering Showcases / Projects Section */}
+        <section id="projects" className="projects-section fade-in-section">
+          <div className="section-header center-align">
+            <span className="section-subtitle">/ Applied Intelligence</span>
+            <h2 className="section-title">Engineering Showcases</h2>
+          </div>
 
+          <div className="projects-filter">
+            <button className="filter-btn">All</button>
+            <button className="filter-btn">ML/DL</button>
+            <button className="filter-btn">Data Eng</button>
+            <button className="filter-btn active">Software</button>
+          </div>
+          
+          <div className="projects-grid">
+            <div className="project-showcase-card">
+              <div className="project-graphic">
+                <div className="pg-bg-glow"></div>
+                <div className="pg-content">
+                  <div className="pg-node pg-source">
+                    <span className="pg-title">Python/Go API</span>
+                    <span className="pg-sub">5K reqs/sec</span>
+                  </div>
+                  <div className="pg-line">
+                    <div className="pg-pulse-dot"></div>
+                  </div>
+                  <div className="pg-node pg-target">
+                    <span className="pg-title">Credit Classifier</span>
+                    <span className="pg-sub">-18% Loss</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-details">
+                <div className="project-header">
+                  <span className="project-category">Software // Enterprise Deployment</span>
+                  <h3 className="project-title-hover">High-Throughput Fintech Engine</h3>
+                </div>
+                <p className="project-desc">
+                  Developed ultra-fast credit scoring microservices supporting 5K+ req/sec with automated shadow deployments for Enova International.
+                </p>
+                
+                <div className="project-tech-tags">
+                  <span>Go</span>
+                  <span>Python</span>
+                  <span>Microservices</span>
+                  <span>gRPC</span>
+                  <span className="tech-more">+2 more</span>
+                </div>
+
+                <div className="project-footer">
+                  <div className="project-metric">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#9FD458" stroke="#9FD458" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    <span>5,000+ requests/sec Supported</span>
+                  </div>
+                  <button className="project-link">
+                    Diagnostics
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Contact Section */}
         <div className="premium-contact-wrapper fade-in-section" id="contact">
