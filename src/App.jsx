@@ -210,12 +210,12 @@ function App() {
 
         {/* Impact Numbers Section */}
         <div className="outcomes-section-wrapper">
-          <section id="achievements" className="outcomes-section fade-in-section">
+          <section id="highlights" className="outcomes-section fade-in-section">
             <div className="outcomes-header">
               <span className="outcomes-number">03</span>
               <span className="outcomes-subtitle">— IMPACT</span>
             </div>
-            <h2 className="outcomes-title">Outcomes, in numbers.</h2>
+            <h2 className="outcomes-title">Delivering Impact.</h2>
 
             <div className="outcomes-grid">
               {/* Row 1: Large Cards (span 2) */}
@@ -292,32 +292,6 @@ function App() {
                 </div>
                 <span className="tl-role">Computer Science</span>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="highlights" className="highlights-section fade-in-section">
-          <div className="section-header center-align">
-            <span className="section-subtitle">/ Career Highlights</span>
-            <h2 className="section-title">Delivering Impact</h2>
-          </div>
-          
-          <div className="highlights-grid">
-            <div className="stat-box dark-box highlight-card">
-              <span className="stat-box-number white-text">10+</span>
-              <span className="stat-box-desc">Years<br/>Experience</span>
-            </div>
-            <div className="stat-box light-box highlight-card">
-              <span className="stat-box-number black-text">100K+</span>
-              <span className="stat-box-desc" style={{color: '#666'}}>Daily Users<br/>Served</span>
-            </div>
-            <div className="stat-box dark-box highlight-card">
-              <span className="stat-box-number white-text">10M+</span>
-              <span className="stat-box-desc">Global Events<br/>Processed</span>
-            </div>
-            <div className="stat-box light-box highlight-card">
-              <span className="stat-box-number black-text">99.9%</span>
-              <span className="stat-box-desc" style={{color: '#666'}}>System<br/>Uptime</span>
             </div>
           </div>
         </section>
