@@ -212,8 +212,7 @@ function App() {
         <div className="outcomes-section-wrapper">
           <section id="highlights" className="outcomes-section fade-in-section">
             <div className="outcomes-header">
-              <span className="outcomes-number">03</span>
-              <span className="outcomes-subtitle">— IMPACT</span>
+              <span className="outcomes-subtitle">/ Impact</span>
             </div>
             <h2 className="outcomes-title">Delivering Impact.</h2>
 

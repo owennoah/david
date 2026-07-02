@@ -924,26 +924,22 @@ body {
   margin: 0 auto;
 }
 .outcomes-header {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 .outcomes-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #777;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.outcomes-number {
-  color: #b3f062; /* Bright green */
-  font-family: monospace;
-  margin-right: 1.5rem;
+  font-family: serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #888;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 .outcomes-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
+  letter-spacing: -0.04em;
   color: #ffffff;
-  margin-top: 1rem;
 }
 
 .outcomes-grid {
