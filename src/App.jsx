@@ -72,7 +72,7 @@ function App() {
             <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
             <li><a href="#highlights" onClick={() => setMenuOpen(false)}>Impact</a></li>
             <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
-            <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
+            <li><a href="/#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
             <li><a href="#expertise" onClick={() => setMenuOpen(false)}>Skills</a></li>
             <li><a href="https://onedrive.live.com/?id=%2Fpersonal%2F899675BF6ED04394%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2FDavid%5FClark%5FResume%2Epdf&listurl=%2Fpersonal%2F899675BF6ED04394%2FDocuments&ithint=file%2Cpdf&TeamsCID=11e47caa%2Dba88%2D4c98%2D9859%2Dfdfce7b00317&linkOpenTime=1783015775954&migratedtospo=true&parent=%2Fpersonal%2F899675BF6ED04394%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files&wdCid=&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy84OTk2NzVCRjZFRDA0Mzk0L0lRQlRPOW1YaGd3alJxeWJiR0FhRGJJdkFkME1UT0Z1WWZLSW9MLXNNMy1Mc3EwP1RlYW1zQ0lEPTExZTQ3Y2FhLWJhODgtNGM5OC05ODU5LWZkZmNlN2IwMDMxNyZsaW5rT3BlblRpbWU9MTc4MzAxNTc3NTk1NA&ga=1" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Resume ↓</a></li>
           </ul>
