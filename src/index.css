@@ -1272,6 +1272,17 @@ a.pro-value:hover {
     gap: 4rem;
   }
 }
+@media (max-width: 768px) {
+  .premium-contact-container {
+    padding: 0 1.5rem;
+  }
+  .pro-contact-form {
+    padding: 2rem 1.5rem;
+  }
+  .premium-contact-wrapper {
+    padding: 5rem 0;
+  }
+}
 @media (max-width: 600px) {
   .pro-input-row { grid-template-columns: 1fr; }
   .premium-title { font-size: 2.5rem; }
